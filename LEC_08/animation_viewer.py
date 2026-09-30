@@ -38,5 +38,8 @@ while running:
 
     if frame == 0:
         play_count += 1
+        if play_count == 5:
+            play_count = 0
+            animation = (animation + 1) % 4
 
 close_canvas()
