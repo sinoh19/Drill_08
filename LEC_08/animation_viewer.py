@@ -23,5 +23,6 @@ while running:
     character.clip_draw(frame * 64, 192, 64, 64, 400, 300, 200, 200)
     update_canvas()
     delay(0.1)
+    frame = (frame + 1) % 10
 
 close_canvas()
