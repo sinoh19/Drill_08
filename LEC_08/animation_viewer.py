@@ -10,6 +10,8 @@ frame = 0
 animation = 0
 running = True
 
+frame_counts = [10, 10, 10, 9]
+
 while running:
     for event in get_events():
         if event.type == SDL_QUIT:
@@ -31,6 +33,6 @@ while running:
         character.clip_draw(frame * 64, 0, 64, 64, 400, 300, 200, 200)
     update_canvas()
     delay(0.1)
-    frame = (frame + 1) % 10
+    frame = (frame + 1) % frame_counts[animation]
 
 close_canvas()
