@@ -7,6 +7,7 @@ open_canvas()
 character = load_image(str(Path(__file__).with_name('all_64x64.png')))
 
 frame = 0
+play_count = 0
 animation = 0
 running = True
 
