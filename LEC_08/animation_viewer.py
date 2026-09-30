@@ -36,4 +36,7 @@ while running:
     delay(0.1)
     frame = (frame + 1) % frame_counts[animation]
 
+    if frame == 0:
+        play_count += 1
+
 close_canvas()
